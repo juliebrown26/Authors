@@ -1,0 +1,12 @@
+<a href="/">Home</a>
+<h4 style="color: gray">Edit this author:</h4>
+<div class="col-lg-4" style="border: 1px solid black; padding: 10px; height: 100px;">
+    <div class="postForm" *ngIf="author" >
+        <label>
+        Name:<br>
+        <input type="text" name="author.name"
+        [(ngModel)]="author.name">
+        </label><br>
+        <input type="submit" value="Submit" (click)="editAuthor(author)"> 
+    </div>
+</div>
